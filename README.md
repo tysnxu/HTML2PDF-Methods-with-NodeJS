@@ -1,6 +1,6 @@
 # NodeJS_HTML2PDF_Methods
  
-This repo compares some methods that I'm experimenting for creating PDF files using HTML.
+This repo compares some methods that I'm experimenting for creating PDF files from HTML using NodeJS.
 
 Method List:
 - Using Puppeteer
