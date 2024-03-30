@@ -10,7 +10,7 @@ const puppeteer = require("puppeteer");
   // Website URL to export as pdf
   // const website_url = 'https://www.bannerbear.com/blog/how-to-download-images-from-a-website-using-puppeteer/';
   // const website_url = 'http://localhost:8000/businesscard.html';
-  const website_url = "E:\\html_pdf\\new\\business_card\\businesscard.html";
+  const website_url = "E:\\html_pdf\\puppeteer\\index.html";
 
   // Open URL in current page
   await page.goto(website_url, { waitUntil: "networkidle0" });
@@ -26,7 +26,7 @@ const puppeteer = require("puppeteer");
     // height: "2in",              // SETS THE SIZE, WILL BE OVERWRITTEN BY FORMAT (E.G. LETTER, A4, etc.)
     format: 'A4',               // OVERWRITES WIDTH & HEIGHT
     printBackground: true,
-    //   margin: { top: '100px', right: '50px', bottom: '100px', left: '50px' },
+      margin: { top: '50px', right: '50px', bottom: '50px', left: '50px' },
   });
 
   await browser.close();        // Close the browser instance
